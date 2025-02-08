@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amos Autos</title>
+    <!-- SEO Metadata -->
+    <meta name="description" content="Amos Kimutai Korir - Student from Co-operative University, specializing in Bachelor of Science in IT."/>
+    <meta name="keywords" content="Amos Kimutai Korir - Student from Co-operative University, specializing in Bachelor of Science in IT."/>
+    <meta name="author" content="Amos Kimutai Korir" />
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.jpg" type="image/x-icon">
+    <!--  CSS  -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="assets/images/favicon.jpg" alt="logo" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover;">
+                <span>Amos Auto-Parts Shop</span>
+            </div>
+            <div  class="nav-toggler" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact" class="active">Contact Us</a></li>
+            </ul>
+                <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </nav>
+        <!-- Overlay for the background content -->
+        <div class="overlay"></div>
+    </header>
+
+    <section id="home" class="section hero-section">
+        <div class="hero-content animate__animated animate__fadeIn">
+            <h1>Welcome to  Auto Parts Shop</h1>
+            <p>Your one-stop shop for high-quality auto parts and accessories.</p>
+            <a href="#products" class="btn">Explore Products</a>
+        </div>
+        <!-- Rotating 3D Image Carousel -->
+        <div class="box">
+            <span style="--i:0;"><img src="assets/images/rotating-images/rotate1.jpg" alt="Product 1" loading="lazy"></span>
+            <span style="--i:1;"><img src="assets/images/rotating-images/rotate2.jpg" alt="Product 2" loading="lazy"></span>
+            <span style="--i:2;"><img src="assets/images/rotating-images/rotate3.png" alt="Product 3" loading="lazy"></span>
+            <span style="--i:3;"><img src="assets/images/rotating-images/rotate4.jpg" alt="Product 4" loading="lazy"></span>
+            <span style="--i:4;"><img src="assets/images/rotating-images/rotate5.jpg" alt="Product 5" loading="lazy"></span>
+            <span style="--i:5;"><img src="assets/images/rotating-images/rotate6.jpg" alt="Product 6" loading="lazy"></span>
+            <span style="--i:6;"><img src="assets/images/rotating-images/rotate7.jpg" alt="Product 7" loading="lazy"></span>
+            <span style="--i:7;"><img src="assets/images/rotating-images/rotate8.jpg" alt="Product 8" loading="lazy"></span>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>We are a trusted provider of auto parts for all types of vehicles. With over 10 years of experience, we ensure top-notch quality and customer satisfaction.</p>
+            <div class="stats">
+                <div class="stat">
+                    <i class="fas fa-cogs"></i>
+                    <h3>1000+</h3>
+                    <p>Parts Available</p>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <h3>5000+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-award"></i>
+                    <h3>10+</h3>
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="section">
+        <h2>Our Products</h2>
+        <div class="carousel">
+            <button class="carousel-button prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <img src="assets/images/brakepad.png" alt="Brake Pads">
+                    <div class="product-info">
+                        <h3>Brake Pads</h3>
+                        <p>High-performance brake pads for all vehicles.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/car-battery.png" alt="Car Batteries">
+                    <div class="product-info">
+                        <h3>Car Batteries</h3>
+                        <p>Durable and long-lasting car batteries.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/engine-oil.png" alt="Engine oil">
+                    <div class="product-info">
+                        <h3>Engine Oil</h3>
+                        <p>Premium engine oil for optimal performance.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/tire.png" alt="Tires">
+                    <div class="product-info">
+                        <h3>Tires</h3>
+                        <p>High-quality tires for all vehicle types.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/air-filter.png" alt="Air Filters">
+                    <div class="product-info">
+                        <h3>Air Filters</h3>
+                        <p>Top-grade air filters for better engine performance.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/spark-plug.png" alt="Spark Plugs">
+                    <div class="product-info">
+                        <h3>Spark Plugs</h3>
+                        <p>Reliable spark plugs for efficient engine operation.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/alternator.png" alt="Alternators">
+                    <div class="product-info">
+                        <h3>Alternators</h3>
+                        <p>High-performance alternators for your vehicle.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/exhaust.png" alt="Exhaust System">
+                    <div class="product-info">
+                        <h3>Exhaust System</h3>
+                        <p>Durable and efficient exhaust systems for all vehicles.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/brake-fluid.png" alt="Brake Fluid">
+                    <div class="product-info">
+                        <h3>Brake Fluid</h3>
+                        <p>Top-quality brake fluid for smooth and safe braking.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/fuel-filter.png" alt="Fuel Filters">
+                    <div class="product-info">
+                        <h3>Fuel Filters</h3>
+                        <p>Efficient fuel filters for better engine performance.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-button next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <h2>Testimonials</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <img src="assets/images/testimonial1.jpg" alt="Customer 1">
+                <p>"The best auto parts shop I've ever used. Highly recommended!"</p>
+                <h4>John Doe</h4>
+            </div>
+            <div class="testimonial">
+                <img src="assets/images/testimonial2.jpg" alt="Customer 2">
+                <p>"Great quality and excellent customer service. Will definitely return!"</p>
+                <h4>Jane Smith</h4>
+            </div>
+            <div class="testimonial">
+                <img src="assets/images/testimonial3.jpg" alt="Customer 3">
+                <p>"Highly recommend to anyone looking for a reliable, trustworthy shop!"</p>
+                <h4>Amos Kimutai</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="blog" class="section">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-posts">
+            <div class="blog-post">
+                <img src="assets/images/blog-image1.jpg" alt="Blog Post 1">
+                <h3>Top 5 Car Maintenance Tips</h3>
+                <p>Learn how to keep your car in top condition.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="assets/images/blog-image2.jpg" alt="Blog Post 2">
+                <h3>How to Choose the Right Engine Oil</h3>
+                <p>A guide to selecting the best engine oil for your vehicle.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> 123 Auto Street, Nairobi, Kenya</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> amoskorir641@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form id="newsletter-form">
+                <label>
+                    <input type="email" placeholder="Enter your email" required>
+                </label>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+        <div class="social-links">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-x"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023  Amos Auto Parts Shop. All rights reserved.</p>
+            <a href="#home" class="back-to-top" aria-label="Back to Top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="assets/scripts.js"></script>
+
+</body>
+</html>
