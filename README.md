@@ -21,6 +21,41 @@
 - Additionally, integrating the carousel with both automatic and manual navigation was a challenge. To resolve this, I used JavaScript to manage the state of the carousel items and ensure both functionalities worked seamlessly, with setInterval controlling automatic transitions.
 
 ## Deployment Process:
-- The website was deployed using Netlify. The process involved uploading files to the netlify without connecting to Git. After that, I changed the default given url to something relevant [https://amosautos.netlify.app/]. This allowed me to deploy the website quickly and efficiently with no server configuration required. The setback of this method of uploading folder to netlify is that there is no automatic updates unlike connecting to git repository.
+The website was deployed using both GitHub Pages and Netlify. Here's how each deployment process was handled:
+
+    GitHub Pages Deployment:
+        I pushed the project files to a GitHub repository.
+        I enabled GitHub Pages through the repository's settings, which served the website directly from the repository.
+        The default GitHub Pages URL was automatically generated, but it was updated to a more relevant, custom domain name.
+
+    Netlify Deployment:
+        I uploaded the files directly to Netlify without connecting to a Git repository.
+        After uploading the files, I changed the default Netlify URL to something more relevant for the project.
+        This allowed me to deploy the website quickly and efficiently without requiring any server configuration.
+
+Setback of Netlify Deployment:
+
+    The main downside of deploying via Netlify without connecting to a Git repository is that there are no automatic updates.
+    Any changes or updates made to the project would need to be manually uploaded to Netlify. Unlike GitHub Pages (or other Git-based deployment methods), there’s no direct connection to version control for automatic deployment on updates.
 
 - Live demo: [amosautos](https://amosautos.netlify.app/)
+- Github pages: [amosautos](https://amohnice.github.io/amosautos/)
+
+# Landing Page with Light and Dark Mode
+## Light Mode Image
+
+![Light Mode](assets/images/Landing%20page/light-mode.png)
+
+## Dark Mode Image
+
+![Dark Mode](assets/images/Landing%20page/dark-mode.png)
+
+### Technologies Used:
+- HTML
+- CSS
+- JavaScript
+
+### Instructions:
+1. Clone the repository to your local machine. 'https://github.com/amohnice/amosautos.git'
+2. Open `index.html` in your browser to view the page.
+
